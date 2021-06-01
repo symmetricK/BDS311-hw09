@@ -8,6 +8,7 @@ def row_distance(row1, row2):
     INPUT: two rows which should be Pandas series or array-type, not data frame 
     OUTPUT: Euclidean disstance
     '''
+    #test check weather my computer works or not
     
 
 def calc_distance_to_all_rows(df,example_row ):

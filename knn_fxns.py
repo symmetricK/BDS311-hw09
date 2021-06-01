@@ -9,6 +9,7 @@ def row_distance(row1, row2):
     OUTPUT: Euclidean disstance
     '''
     #test check weather my computer works or not
+    #confirmed
     
 
 def calc_distance_to_all_rows(df,example_row ):

@@ -52,4 +52,8 @@ def classify(df, example_row, k):
     INPUT: df, Pandas dataframe; example_row, Pandas series or array type; k, integer number of nearest neighbors
     OUTPUT: string referring to closest class.
     """
-    
+    k_df=find_k_closest(df, example_row, k)
+    grouped_df=k_df.groupby(['class']).size().reset_index(name='nums')
+    sorted_df=grouped_df.sort_values(by=['nums'])
+    majority_class=sorted_df['class'].iloc[0]
+    return majority_class

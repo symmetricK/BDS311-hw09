@@ -42,7 +42,7 @@ def find_k_closest(df, example_row, k):
     """
     ret_df=calc_distance_to_all_rows(df,example_row)
     sort_df=ret_df.sort_values(by=['distance_to_ex'])
-    return sort_df[0:k]
+    return sort_df[1:k+1]
 
     
 def classify(df, example_row, k):

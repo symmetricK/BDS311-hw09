@@ -59,7 +59,12 @@ def classify(df, example_row, k):
     return majority_class
 
 def evaluate_accuracy(test_df,training_df1,training_df2,k):
-    '''Returns the proportion of the test_df that was correctly classfied'''
+    """Returns the proportion of the test_df that was correctly classfied
+    Calls 'classify'
+    INPUT: test_df; training_df1; training_df2; k, integer number of nearest neighbors
+    OUTPUT: proportion as the evaluated accuracy     
+    """
+    
     test_attribute_df=test_df.drop(['class'],axis=1)
     
     training_dataframes=[training_df1,training_df2]

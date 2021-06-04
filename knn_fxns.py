@@ -57,3 +57,5 @@ def classify(df, example_row, k):
     sorted_df=grouped_df.sort_values(by=['nums'])
     majority_class=sorted_df['class'].iloc[0]
     return majority_class
+
+def evaluate_accuracy
